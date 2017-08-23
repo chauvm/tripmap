@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TutorialChildViewController">
+            <connections>
+                <outlet property="contentText" destination="hz8-3Q-rW4" id="y3c-c4-77X"/>
+                <outlet property="screenLabel" destination="STA-Eg-16Y" id="eW3-ME-xKg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-3Q-rW4">
+                    <rect key="frame" x="8" y="122" width="584" height="470"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STA-Eg-16Y">
+                    <rect key="frame" x="8" y="75" width="584" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="KC1-Tu-Ozr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96606725920485537" green="1" blue="0.96634523570335329" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="STA-Eg-16Y" firstAttribute="leading" secondItem="hz8-3Q-rW4" secondAttribute="leading" id="0Ak-XZ-Phj"/>
+                <constraint firstItem="hz8-3Q-rW4" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottomMargin" id="25C-kn-yrU"/>
+                <constraint firstItem="STA-Eg-16Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="75" id="4Cw-XW-lBd"/>
+                <constraint firstItem="hz8-3Q-rW4" firstAttribute="trailing" secondItem="STA-Eg-16Y" secondAttribute="trailing" id="FzM-zH-QE4"/>
+                <constraint firstItem="STA-Eg-16Y" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="PVh-vQ-1Dl"/>
+                <constraint firstItem="hz8-3Q-rW4" firstAttribute="top" secondItem="STA-Eg-16Y" secondAttribute="bottom" constant="8" symbolic="YES" id="dZo-7s-ufe"/>
+                <constraint firstItem="STA-Eg-16Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="zjm-gd-UQZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+{
+	"MA" : [
+		{"route_name": "Red",
+         "directions":
+            [
+                {
+                    "name" : "Alewife To Braintree",
+                    "start" : "Alewife",
+                    "end" : "Braintree",
+                    "line" : "Red",
+                    "stations" :
+                        [
+                            {"stop_name" : "Alewife",
+                            "stop_id": "70061",
+                            "address" : "Intersection of Alewife Brook Parkway and Cambridge Park Drive, Cambridge",
+                            "accessible" : "YES",
+                            "stop_order" : "1",
+                            "transfer" : "NO"
+                            },
+                            {"stop_name" : "Park Street",
+                            "stop_id" : "70075",
+                            "address" : "Corner of Boston Common at Intersection of Tremont, Park and Winter Streets, Downtown Boston",
+                            "accessible" : "YES",
+                            "stop_order" : "8",
+                            "transfer" : "YES"
+                            }
+                        ]
+                },
+                {
+                    "name" : "Alewife To Ashmont",
+                    "start" : "Alewife",
+                    "end" : "Ashmont",
+                    "line" : "Red",
+                    "stations" :
+                        [
+                            {"stop_name" : "Downtown Crossing",
+                            "address" : "Corner of Washington Street and Summer Street and the corner of Chauncey Street and Summer Street, Downtown Boston",
+                            "accessible" : "YES",
+                            "stop_order" : "9",
+                            "transfer" : "YES"
+                            },
+                            {"stop_name" : "Ashmont",
+                            "address" : "1900 Dorchester Avenue at 200 Ashmont Street, Dorchester",
+                            "accessible" : "YES",
+                            "stop_order" : "17",
+                            "transfer" : "YES"
+                            }
+                        ]
+                 }
+             
+            ]
+        },
+
+	]
+}

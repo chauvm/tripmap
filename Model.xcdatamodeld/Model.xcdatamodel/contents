@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Direction" representedClassName="Direction" syncable="YES">
+        <attribute name="end" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="line" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="start" attributeType="String" syncable="YES"/>
+        <relationship name="lineRel" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="directions" inverseEntity="Line" syncable="YES"/>
+        <relationship name="stations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Station" inverseName="directionStations" inverseEntity="Station" syncable="YES"/>
+    </entity>
+    <entity name="Line" representedClassName="Line" syncable="YES">
+        <attribute name="route_color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="route_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="route_long_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="route_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="directions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Direction" inverseName="lineRel" inverseEntity="Direction" syncable="YES"/>
+    </entity>
+    <entity name="Station" representedClassName="Station" syncable="YES">
+        <attribute name="accessible" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="parent_station" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stop_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stop_lat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stop_lon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stop_long_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="transfer" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="transfer_lines" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="directionStations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Direction" inverseName="stations" inverseEntity="Direction" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Direction" positionX="-54" positionY="9" width="128" height="135"/>
+        <element name="Line" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="Station" positionX="-36" positionY="54" width="128" height="210"/>
+    </elements>
+</model>
